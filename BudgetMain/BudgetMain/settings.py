@@ -25,8 +25,16 @@ SECRET_KEY = "django-insecure-e(92lje^d6a3vorv@#7ji50!g#oj^lu0!3i(1m74luh1fh6w3x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "localhost",
+    "127.0.0.1",
+    "super-umbrella-66x7pq9j49r2xqxp-8000.app.github.dev"
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://super-umbrella-66x7pq9j49r2xqxp-8000.app.github.dev",
+    "https://localhost:8000"
+]
 
 # Application definition
 
